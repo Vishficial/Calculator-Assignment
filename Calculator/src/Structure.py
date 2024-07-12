@@ -8,21 +8,21 @@ def Eval():
     Vishi = True
     while Vishi is True:
 #input for first value
-        First = int(input("::"))
+        First = int(input("Enter The First Digit:"))
 
         #if the user wants to exit the app
         if First == 00:
             print("Closing the app")
             exit()
 #input for second value
-        Sec = int(input("::"))
+        Sec = int(input("Enter The Second Digit:"))
 
         #if the user wants to end the app
         if Sec == 00:
             print("Closing the app")
             exit()
 #input for the operator
-        Opp = int(input("**"))
+        Opp = int(input("Enter The Operator:"))
 
         if Opp == 1:
             print(O.add(First,Sec))
