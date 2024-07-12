@@ -1,4 +1,5 @@
 from src import Operators as O
+from src import HandleErrors as H
 
 def menu():
     print("1-Addition\n2-Substraction\n3-Multiplication\n4-Division\n5-power to\n6-Rounding\n7-Remaining\n00-Exit")
@@ -8,40 +9,46 @@ def Eval():
     Vishi = True
     while Vishi is True:
 #input for first value
-        First = int(input("Enter The First Digit:"))
+        First = H.Num1()
 
-        #if the user wants to exit the app
+#if the user wants to exit the app
         if First == 00:
             print("Closing the app")
             exit()
-#input for second value
-        Sec = int(input("Enter The Second Digit:"))
 
-        #if the user wants to end the app
+
+#input for second value
+        Sec = H.Num2()
+
+#if the user wants to end the app
         if Sec == 00:
             print("Closing the app")
             exit()
-#input for the operator
-        Opp = int(input("Enter The Operator:"))
 
-        if Opp == 1:
+
+#input for the operator
+        Oppe = H.Opp()
+
+
+
+#Executing the Operations on input Values
+        if Oppe == 1:
             print(O.add(First,Sec))
-        elif Opp ==2:
+        elif Oppe ==2:
             print(O.sub(First,Sec))
-        elif Opp == 3:
+        elif Oppe == 3:
             print(O.prod(First,Sec))
-        elif Opp == 4:
+        elif Oppe == 4:
             print(O.div(First,Sec))
-        elif Opp == 5:
+        elif Oppe == 5:
             print(O.exp(First,Sec))
-        elif Opp == 6:
+        elif Oppe == 6:
             print(O.round(First,Sec))
-        elif Opp == 7:
+        elif Oppe == 7:
             print(O.rem(First,Sec))
-        elif Opp == 00:
+        elif Oppe == 00:
             print("Closing the app")
             Vishi = False
-        else:
-            print("Wrong Input,Try Again")
+
 
 
