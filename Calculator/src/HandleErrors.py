@@ -39,8 +39,11 @@ def Opp():
         Entry = input("Choose the Operator from Menu:")
         try:
             opp = int(Entry)
-            ash = False
-            return opp
+            if opp>=8:
+                print("Try Again!")
+            else:
+                Harry = False
+                return opp
         except ValueError:
             print("Wrong input! Try Again")
 
