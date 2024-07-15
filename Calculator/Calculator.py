@@ -2,7 +2,7 @@ from src import Structure as S
 
 def main():
     S.menu()
-    S.Eval()
+    S.value()
 
 
 
