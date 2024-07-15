@@ -13,8 +13,6 @@ def value():
             if Oppe == 0:
                 print("Closing the app")
                 exit()
-            # elif Oppe ==8:
-            #     fh.show()
 
 #input for first value
 
