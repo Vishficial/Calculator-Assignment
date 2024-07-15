@@ -46,15 +46,11 @@ def Opp():
         Entry = input("Choose the Operator from Menu:")
         try:
             opp = int(Entry)
-<<<<<<< HEAD
+
             if opp > 8:
                 print("Try Again!")
             elif opp ==8:
                 fh.show()
-=======
-            if opp>=8:
-                print("Try Again!")
->>>>>>> eade9950d6cba5c12cd5284817d4af2449feda4d
             else:
                 Harry = False
                 return opp
