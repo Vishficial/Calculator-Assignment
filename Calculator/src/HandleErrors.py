@@ -1,3 +1,7 @@
+from src import ForHistory as fh
+
+
+
 #To get the integer value and preventing error if anyother value is entered
 
 
@@ -25,8 +29,11 @@ def Num2():
         Entry = input("Enter the Second Number:")
         try:
             Sec = int(Entry)
-            ash = False
-            return Sec
+            if Sec == 0:
+                print("Invalid Input! Try Agian")
+            else:
+                ash = False
+                return Sec
 
         except ValueError:
             print("wrong input! Try Again")
@@ -39,8 +46,15 @@ def Opp():
         Entry = input("Choose the Operator from Menu:")
         try:
             opp = int(Entry)
+<<<<<<< HEAD
+            if opp > 8:
+                print("Try Again!")
+            elif opp ==8:
+                fh.show()
+=======
             if opp>=8:
                 print("Try Again!")
+>>>>>>> eade9950d6cba5c12cd5284817d4af2449feda4d
             else:
                 Harry = False
                 return opp
