@@ -1,4 +1,5 @@
 from src import ForHistory as fh
+from src import Operators as O
 
 
 
@@ -29,12 +30,26 @@ def Num2():
         Entry = input("Enter the Second Number:")
         try:
             Sec = int(Entry)
-            if Sec == 0:
-                print("Invalid Input! Try Agian")
+            # if Sec == 0:
+            #     print("Cant Divide by Zero!")
+            # else:
+            ash = False
+            return Sec
+
+        except ValueError:
+            print("wrong input! Try Again")
+
+def Num3():
+    ash = True
+    while ash is True:
+        Entry = input("Enter second number again!:")
+        try:
+            Sec2 = int(Entry)
+            if Sec2 == 0:
+                print("Cant divide by Zero!")
             else:
                 ash = False
-                return Sec
-
+                return Sec2
         except ValueError:
             print("wrong input! Try Again")
 
@@ -50,6 +65,7 @@ def Opp():
             if opp > 8:
                 print("Try Again!")
             elif opp ==8:
+                O.time_delay()
                 fh.show()
             else:
                 Harry = False

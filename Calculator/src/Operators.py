@@ -1,5 +1,5 @@
 from src import ForHistory as Hi
-
+import time
 #Function for addition fo two input values
 def add(num1, num2):
     Sum = num1+num2
@@ -51,6 +51,15 @@ def exp(num1, num2):
     entry = f"{num1}^{num2}={Sum}"
     Hi.add_file(entry)
     return Sum
+
+def time_delay():
+    print(".",end="")
+    time.sleep(0.3)
+    print(".",end="")
+    time.sleep(0.3)
+    print(".",end="")
+    time.sleep(0.3)
+    print(".")
 
 # F = int(input("enter no.:"))
 # S = int(input("enter no.:"))
