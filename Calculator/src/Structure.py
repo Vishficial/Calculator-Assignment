@@ -39,11 +39,13 @@ def value():
                 print("Cant divide by two!")
                 Sec2 = H.Num3()
                 Total = O.round(First,Sec2)
+                 O.time_delay()
                 print(f"{First}//{Sec2}={Total}")
             elif Sec == 0 and Oppe == 7:
                 print("Cant divide by two!")
                 Sec2 = H.Num3()
                 Total = O.rem(First, Sec2)
+                 O.time_delay()
                 print(f"{First}%{Sec2}={Total}")
 
             elif Oppe == 1:
